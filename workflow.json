@@ -6,7 +6,7 @@
         "data": {
           "id": "note-project-info",
           "node": {
-            "description": "### 📌 PROJECT INFORMATION\n\n**Customer Feedback Sentiment Analyzer**\n\nDeveloper: Nico Alfianto\nInstitution: Universitas Bina Sarana Informatika\n\nDataset: laptop_online_review.csv\n\nCapstone Project 2026",
+            "description": "### PROJECT INFORMATION\n\n**Customer Feedback Sentiment Analyzer**\n\nDeveloper: Nico Alfianto\nInstitution: Universitas Bina Sarana Informatika\n\nDataset: laptop_online_review.csv\n\nCapstone Project 2026",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -22,7 +22,7 @@
         "data": {
           "id": "note-readfile",
           "node": {
-            "description": "### 📂 READ FILE\n\nUpload file:\n\nlaptop_online_review.csv\n\nDataset berisi:\n- Product Name\n- Customer Review\n- Rating\n\nKomponen: Read File",
+            "description": "### READ FILE\n\nUpload file:\n\nlaptop_online_review.csv\n\nDataset berisi:\n- Product Name\n- Customer Review\n- Rating\n\nKomponen: Read File",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -38,7 +38,7 @@
         "data": {
           "id": "note-extractor",
           "node": {
-            "description": "### 🔎 TEXT EXTRACTOR\n\nMengekstrak isi review pelanggan dari file CSV untuk diproses oleh AI Agent.\n\nKomponen: Text Extractor",
+            "description": "### TEXT EXTRACTOR\n\nMengekstrak isi review pelanggan dari file CSV untuk diproses oleh AI Agent.\n\nKomponen: Text Extractor",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -54,7 +54,7 @@
         "data": {
           "id": "note-prompt",
           "node": {
-            "description": "### 📝 PROMPT TEMPLATE\n\nRole:\nAI Customer Feedback Analyst\n\nTasks:\n- Sentiment Analysis\n- Theme Extraction\n- Complaint Classification\n- Business Risk Assessment\n- Recommendation Generation",
+            "description": "### PROMPT TEMPLATE\n\nRole:\nAI Customer Feedback Analyst\n\nTasks:\n- Sentiment Analysis\n- Theme Extraction\n- Complaint Classification\n- Business Risk Assessment\n- Recommendation Generation",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -70,7 +70,7 @@
         "data": {
           "id": "note-llm",
           "node": {
-            "description": "### 🤖 LANGUAGE MODEL\n\nModel digunakan untuk:\n\n- Analisis Sentimen\n- Identifikasi Tema\n- Klasifikasi Keluhan\n- Insight Bisnis\n- Rekomendasi Perbaikan",
+            "description": "### LANGUAGE MODEL\n\nModel digunakan untuk:\n\n- Analisis Sentimen\n- Identifikasi Tema\n- Klasifikasi Keluhan\n- Insight Bisnis\n- Rekomendasi Perbaikan",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -86,7 +86,7 @@
         "data": {
           "id": "note-parser",
           "node": {
-            "description": "### 📊 STRUCTURED OUTPUT PARSER\n\nMengubah hasil analisis menjadi format JSON terstruktur.\n\nOutput:\n- Sentiment\n- Themes\n- Complaint Categories\n- Risk Assessment\n- Recommendations",
+            "description": "### STRUCTURED OUTPUT PARSER\n\nMengubah hasil analisis menjadi format JSON terstruktur.\n\nOutput:\n- Sentiment\n- Themes\n- Complaint Categories\n- Risk Assessment\n- Recommendations",
             "display_name": "",
             "documentation": "",
             "template": {
@@ -102,7 +102,7 @@
         "data": {
           "id": "note-output",
           "node": {
-            "description": "### 💬 CHAT OUTPUT\n\nMenampilkan:\n\n- Executive Summary\n- Overall Sentiment\n- Business Insights\n- Risk Assessment\n- Recommended Actions",
+            "description": "### CHAT OUTPUT\n\nMenampilkan:\n\n- Executive Summary\n- Overall Sentiment\n- Business Insights\n- Risk Assessment\n- Recommended Actions",
             "display_name": "",
             "documentation": "",
             "template": {
