@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Feedback Sentiment Analyzer</title>
+<style>
+  :root{
+    --bg:#0f1115;
+    --card:#151820;
+    --muted:#9aa3b2;
+    --text:#e6e9ef;
+    --accent:#4f8cff;
+    --border:#232838;
+    --code:#0b0d12;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  .container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:24px 16px 80px;
+  }
+  header{
+    padding:28px 0 16px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:24px;
+  }
+  h1{
+    font-size:clamp(24px, 4vw, 36px);
+    margin-bottom:8px;
+  }
+  .subtitle{
+    color:var(--muted);
+    font-size:clamp(14px, 2.5vw, 16px);
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+  }
+  h2{
+    font-size:clamp(18px, 3vw, 24px);
+    margin-bottom:12px;
+    color:var(--accent);
+  }
+  h3{
+    font-size:clamp(16px, 2.5vw, 20px);
+    margin:16px 0 8px;
+  }
+  ul{padding-left:20px;margin:8px 0}
+  li{margin:6px 0}
+  pre{
+    background:var(--code);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:14px;
+    overflow-x:auto;
+    font-size:14px;
+  }
+  code{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+  img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    border:1px solid var(--border);
+    margin:12px 0;
+    background:#000;
+  }
+  .grid{
+    display:grid;
+    gap:16px;
+  }
+  @media (min-width: 720px){
+    .grid-2{grid-template-columns:1fr 1fr}
+  }
+  .flow{
+    background:var(--code);
+    border:1px solid var(--border);
+    padding:16px;
+    border-radius:10px;
+    font-family:ui-monospace, monospace;
+    white-space:pre;
+    overflow-x:auto;
+  }
+  .badge{
+    display:inline-block;
+    background:#1c2233;
+    border:1px solid var(--border);
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12px;
+    color:var(--muted);
+    margin-right:6px;
+    margin-bottom:6px;
+  }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+    margin-top:40px;
+    border-top:1px solid var(--border);
+    padding-top:20px;
+  }
+  a{
+    color:var(--accent);
+    text-decoration:none;
+  }
+  a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Customer Feedback Sentiment Analyzer</h1>
+      <p class="subtitle">AI-powered analyzer built with Langflow and Google Gemini to analyze laptop customer reviews from CSV files.</p>
+      <div style="margin-top:12px">
+        <span class="badge">Sentiment Analysis</span>
+        <span class="badge">Theme Extraction</span>
+        <span class="badge">Business Insight</span>
+        <span class="badge">CSV</span>
+      </div>
+    </header>
+
+    <div class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Sentiment Analysis: Positive, Neutral, Negative</li>
+        <li>Theme Extraction</li>
+        <li>Complaint Classification</li>
+        <li>Business Insight Generation</li>
+        <li>Business Risk Assessment</li>
+        <li>Recommendation Generation</li>
+        <li>Executive Summary</li>
+        <li>CSV-based Review Analysis</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Workflow Architecture</h2>
+      <div class="flow">CSV File
+     │
+     ▼
+Read File
+     │
+     ▼
+Text Extractor
+     │
+     ▼
+Prompt Template
+     │
+     ▼
+Google Gemini
+     │
+     ▼
+Structured Output Parser
+     │
+     ▼
+Chat Output</div>
+    </div>
+
+    <div class="card">
+      <h2>Prompt Template</h2>
+      <p>Prompt used to guide the AI to analyze customer sentiment based on the laptop review dataset.</p>
+      <img src="ss/prompt.png" alt="Prompt Template">
+    </div>
+
+    <div class="card">
+      <h2>Main Flow Canvas</h2>
+      <p>Main workflow built using Langflow Desktop.</p>
+      <img src="ss/flow.png" alt="Main Flow Canvas">
+    </div>
+
+    <div class="card">
+      <h2>Playground Result</h2>
+      <p>Example of analysis output from the Langflow Playground.</p>
+      <img src="ss/playground.png" alt="Playground Result">
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h2>Dataset</h2>
+        <p>Dataset used:</p>
+        <pre><code>laptop_online_review.csv</code></pre>
+        <h3>Dataset Columns:</h3>
+        <ul>
+          <li>Product Name</li>
+          <li>Review</li>
+          <li>Rating</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>AI Analysis</h2>
+        <p>The model performs the following analysis steps:</p>
+        <ul>
+          <li>Sentiment Analysis</li>
+          <li>Theme Identification</li>
+          <li>Complaint Classification</li>
+          <li>Business Insight Generation</li>
+          <li>Business Risk Assessment</li>
+          <li>Recommendation Generation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Output</h2>
+      <ul>
+        <li>Executive Summary</li>
+        <li>Overall Sentiment</li>
+        <li>Sentiment Distribution</li>
+        <li>Top Positive Themes</li>
+        <li>Top Negative Themes</li>
+        <li>Complaint Classification Summary</li>
+        <li>Key Business Insights</li>
+        <li>Business Risk Assessment</li>
+        <li>Recommended Actions</li>
+        <li>Final Conclusion</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li>Langflow Desktop</li>
+        <li>Google Gemini 2.5 Flash</li>
+        <li>Python</li>
+        <li>CSV Dataset</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Installation</h2>
+      <p>Clone the repository:</p>
+      <pre><code>git clone https://github.com/nico-alfainto/customer-sentiment-analyzer.git</code></pre>
+      <p>Navigate to the project folder:</p>
+      <pre><code>cd customer-sentiment-analyzer</code></pre>
+      <p>Import <code>workflow.json</code> into Langflow Desktop, upload <code>laptop_online_review.csv</code>, then click <strong>Run Flow</strong>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Project Structure</h2>
+      <pre><code>customer-sentiment-analyzer
+│
+├── workflow.json
+├── prompt.txt
+├── laptop_online_review.csv
+├── README.md
+│
+└── ss
+    ├── prompt.png
+    ├── flow.png
+    └── playground.png</code></pre>
+    </div>
+
+    <div class="card">
+      <h2>Project Objective</h2>
+      <p>To build a customer sentiment analysis system based on Large Language Models (LLM) that transforms customer review data into business insights to support company decision-making.</p>
+    </div>
+
+    <div class="card">
+      <h2>Author</h2>
+      <p><strong>Nico Alfianto</strong></p>
+      <p>Universitas Bina Sarana Informatika</p>
+      <p>Capstone Project 2026</p>
+      <p>GitHub: <a href="https://github.com/nico-alfainto" target="_blank">https://github.com/nico-alfainto</a></p>
+    </div>
+
+    <footer>
+      Documentation for Customer Feedback Sentiment Analyzer Project
+    </footer>
+  </div>
+</body>
+</html>
