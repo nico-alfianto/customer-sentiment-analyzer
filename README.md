@@ -1,4 +1,4 @@
-# 💻 Customer Sentiment Analyzer
+# 💻 Customer Feedback Sentiment Analyzer
 
 AI-powered **Customer Feedback Sentiment Analyzer** built with **Langflow** and **Google Gemini** to analyze laptop customer reviews from CSV files.
 
