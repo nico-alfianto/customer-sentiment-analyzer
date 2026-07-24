@@ -1,156 +1,139 @@
 {
-"project": {
-"title": "Customer Feedback Sentiment Analyzer",
-"description": "AI Agent that analyzes laptop customer reviews from CSV files to identify sentiment, customer complaints, business risks, and improvement recommendations.",
-"category": "Artificial Intelligence",
-"platform": "Langflow Desktop",
-"version": "1.0"
-},
+  "data": {
+    "edges": [],
+    "nodes": [
+      {
+        "data": {
+          "id": "note-project-info",
+          "node": {
+            "description": "### 📌 PROJECT INFORMATION\n\n**Customer Feedback Sentiment Analyzer**\n\nDeveloper: Nico Alfianto\nInstitution: Universitas Bina Sarana Informatika\n\nDataset: laptop_online_review.csv\n\nCapstone Project 2026",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#E8F5E9"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      },
 
-"developer": {
-"name": "Nico Alfianto",
-"university": "Universitas Bina Sarana Informatika",
-"project_type": "Capstone Project",
-"year": "2026"
-},
+      {
+        "data": {
+          "id": "note-readfile",
+          "node": {
+            "description": "### 📂 READ FILE\n\nUpload file:\n\nlaptop_online_review.csv\n\nDataset berisi:\n- Product Name\n- Customer Review\n- Rating\n\nKomponen: Read File",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#E3F2FD"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      },
 
-"dataset": {
-"file_name": "laptop_online_review.csv",
-"format": "CSV",
-"description": "Laptop customer reviews dataset containing product names, ratings, and customer feedback."
-},
+      {
+        "data": {
+          "id": "note-extractor",
+          "node": {
+            "description": "### 🔎 TEXT EXTRACTOR\n\nMengekstrak isi review pelanggan dari file CSV untuk diproses oleh AI Agent.\n\nKomponen: Text Extractor",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#FFF3E0"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      },
 
-"workflow": {
-"components": [
-{
-"name": "Read File",
-"purpose": "Load CSV review dataset"
-},
-{
-"name": "Text Extractor",
-"purpose": "Extract review text from dataset"
-},
-{
-"name": "Prompt Template",
-"purpose": "Provide instructions for sentiment and business analysis"
-},
-{
-"name": "Language Model",
-"purpose": "Generate insights and classifications"
-},
-{
-"name": "Structured Output Parser",
-"purpose": "Convert results into structured JSON format"
-},
-{
-"name": "Chat Output",
-"purpose": "Display analysis results"
-}
-]
-},
+      {
+        "data": {
+          "id": "note-prompt",
+          "node": {
+            "description": "### 📝 PROMPT TEMPLATE\n\nRole:\nAI Customer Feedback Analyst\n\nTasks:\n- Sentiment Analysis\n- Theme Extraction\n- Complaint Classification\n- Business Risk Assessment\n- Recommendation Generation",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#F3E5F5"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      },
 
-"features": [
-"Sentiment Analysis",
-"Theme Extraction",
-"Complaint Classification",
-"Business Insight Generation",
-"Business Risk Assessment",
-"Actionable Recommendations"
-],
+      {
+        "data": {
+          "id": "note-llm",
+          "node": {
+            "description": "### 🤖 LANGUAGE MODEL\n\nModel digunakan untuk:\n\n- Analisis Sentimen\n- Identifikasi Tema\n- Klasifikasi Keluhan\n- Insight Bisnis\n- Rekomendasi Perbaikan",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#FFF8E1"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      },
 
-"sentiment_labels": [
-"Positive",
-"Neutral",
-"Negative"
-],
+      {
+        "data": {
+          "id": "note-parser",
+          "node": {
+            "description": "### 📊 STRUCTURED OUTPUT PARSER\n\nMengubah hasil analisis menjadi format JSON terstruktur.\n\nOutput:\n- Sentiment\n- Themes\n- Complaint Categories\n- Risk Assessment\n- Recommendations",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#E0F7FA"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      },
 
-"theme_categories": [
-"Performance",
-"Battery Life",
-"Display Quality",
-"Keyboard",
-"Build Quality",
-"Design",
-"Price",
-"Customer Service",
-"Delivery Experience",
-"Software Issues",
-"Other"
-],
+      {
+        "data": {
+          "id": "note-output",
+          "node": {
+            "description": "### 💬 CHAT OUTPUT\n\nMenampilkan:\n\n- Executive Summary\n- Overall Sentiment\n- Business Insights\n- Risk Assessment\n- Recommended Actions",
+            "display_name": "",
+            "documentation": "",
+            "template": {
+              "backgroundColor": "#FCE4EC"
+            }
+          },
+          "type": "note"
+        },
+        "type": "noteNode"
+      }
+    ]
+  },
 
-"complaint_categories": [
-"Hardware Problem",
-"Battery Issue",
-"Performance Issue",
-"Display Issue",
-"Customer Service Issue",
-"Shipping Issue",
-"Software Issue",
-"Other"
-],
+  "description": "Customer Feedback Sentiment Analyzer for Laptop Reviews",
 
-"output_schema": {
-"overall_sentiment": "Positive | Neutral | Negative",
+  "endpoint_name": null,
 
-```
-"sentiment_distribution": {
-  "positive_percentage": 0,
-  "neutral_percentage": 0,
-  "negative_percentage": 0
-},
+  "id": "nico-capstone-2026",
 
-"top_positive_themes": [
-  "",
-  "",
-  ""
-],
+  "is_component": false,
 
-"top_negative_themes": [
-  "",
-  "",
-  ""
-],
+  "last_tested_version": "1.7.2",
 
-"complaint_classification_summary": [
-  {
-    "category": "",
-    "frequency": 0,
-    "severity": "Low | Medium | High"
-  }
-],
+  "name": "Customer Feedback Sentiment Analyzer",
 
-"key_business_insights": [
-  "",
-  "",
-  ""
-],
-
-"business_risk_assessment": {
-  "risk_level": "Low Risk | Medium Risk | High Risk",
-  "reason": ""
-},
-
-"recommended_actions": [
-  "",
-  "",
-  "",
-  "",
-  ""
-],
-
-"final_conclusion": ""
-```
-
-},
-
-"sticky_notes": [
-{
-"title": "Project Information",
-"content": "Customer Feedback Sentiment Analyzer | Nico Alfianto | Universitas Bina Sarana Informatika"
-},
-{
-"title": "Workflow",
-"content": "Read File → Text Extractor → Prompt Template → Language Model → Structured Output Parser → Chat Output"
-}
-]
+  "tags": [
+    "sentiment-analysis",
+    "customer-feedback",
+    "business-insight",
+    "classification",
+    "langflow",
+    "capstone-project"
+  ]
 }
