@@ -1,0 +1,156 @@
+{
+"project": {
+"title": "Customer Feedback Sentiment Analyzer",
+"description": "AI Agent that analyzes laptop customer reviews from CSV files to identify sentiment, customer complaints, business risks, and improvement recommendations.",
+"category": "Artificial Intelligence",
+"platform": "Langflow Desktop",
+"version": "1.0"
+},
+
+"developer": {
+"name": "Nico Alfianto",
+"university": "Universitas Bina Sarana Informatika",
+"project_type": "Capstone Project",
+"year": "2026"
+},
+
+"dataset": {
+"file_name": "laptop_online_review.csv",
+"format": "CSV",
+"description": "Laptop customer reviews dataset containing product names, ratings, and customer feedback."
+},
+
+"workflow": {
+"components": [
+{
+"name": "Read File",
+"purpose": "Load CSV review dataset"
+},
+{
+"name": "Text Extractor",
+"purpose": "Extract review text from dataset"
+},
+{
+"name": "Prompt Template",
+"purpose": "Provide instructions for sentiment and business analysis"
+},
+{
+"name": "Language Model",
+"purpose": "Generate insights and classifications"
+},
+{
+"name": "Structured Output Parser",
+"purpose": "Convert results into structured JSON format"
+},
+{
+"name": "Chat Output",
+"purpose": "Display analysis results"
+}
+]
+},
+
+"features": [
+"Sentiment Analysis",
+"Theme Extraction",
+"Complaint Classification",
+"Business Insight Generation",
+"Business Risk Assessment",
+"Actionable Recommendations"
+],
+
+"sentiment_labels": [
+"Positive",
+"Neutral",
+"Negative"
+],
+
+"theme_categories": [
+"Performance",
+"Battery Life",
+"Display Quality",
+"Keyboard",
+"Build Quality",
+"Design",
+"Price",
+"Customer Service",
+"Delivery Experience",
+"Software Issues",
+"Other"
+],
+
+"complaint_categories": [
+"Hardware Problem",
+"Battery Issue",
+"Performance Issue",
+"Display Issue",
+"Customer Service Issue",
+"Shipping Issue",
+"Software Issue",
+"Other"
+],
+
+"output_schema": {
+"overall_sentiment": "Positive | Neutral | Negative",
+
+```
+"sentiment_distribution": {
+  "positive_percentage": 0,
+  "neutral_percentage": 0,
+  "negative_percentage": 0
+},
+
+"top_positive_themes": [
+  "",
+  "",
+  ""
+],
+
+"top_negative_themes": [
+  "",
+  "",
+  ""
+],
+
+"complaint_classification_summary": [
+  {
+    "category": "",
+    "frequency": 0,
+    "severity": "Low | Medium | High"
+  }
+],
+
+"key_business_insights": [
+  "",
+  "",
+  ""
+],
+
+"business_risk_assessment": {
+  "risk_level": "Low Risk | Medium Risk | High Risk",
+  "reason": ""
+},
+
+"recommended_actions": [
+  "",
+  "",
+  "",
+  "",
+  ""
+],
+
+"final_conclusion": ""
+```
+
+},
+
+"sticky_notes": [
+{
+"title": "Project Information",
+"content": "Customer Feedback Sentiment Analyzer | Nico Alfianto | Universitas Bina Sarana Informatika"
+},
+{
+"title": "Workflow",
+"content": "Read File → Text Extractor → Prompt Template → Language Model → Structured Output Parser → Chat Output"
+}
+]
+}
